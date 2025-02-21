@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Splash Container */
+.splash-container {
+    margin-top: 50px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Button Styles */
+.buttons .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #FFD700;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.buttons .btn:hover {
+    background-color: #F5F5DC;
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Video Background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 30px;
+    padding: 15px;
+    background: #222;
+}
+
+/* Service Card */
+.service-card {
+    background: #333;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+}
+
+/* Scroll Top Button */
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s;
+}
+
+.scroll-top:hover {
+    background-color: #F5F5DC;
+}
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Delta Dream - خدمات المستأجرين">
+    <title>Delta Dream - المستأجرين</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <video autoplay muted loop class="video-background" poster="fallback-image.jpg">
+        <source src="/photos/IMG_1315.MOV" type="video/mp4">
+        Your browser does not support video playback.
+    </video>
+    <header class="bg-dark text-white p-3">
+        <nav class="container navbar navbar-expand-lg navbar-dark">
+            <div class="logo fs-3">Delta Dream</div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="owners.html">الملاك</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="renters.html">المستأجرين</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="we.html">من نحن</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero position-relative">
+
+            <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                <h1>خدمات المستأجرين</h1>
+                <p>احصل على أفضل العروض والإقامات الفاخرة.</p>
+
+            </div>
+        </section>
+        <section class="services container mt-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card text-center p-3" onclick="toggleDetails('booking')">
+                        <h3>حجوزات الفنادق والشاليهات</h3>
+                        <p>أفضل الأسعار والعروض الحصرية.</p>
+                        <div id="booking" class="details collapse">
+                            <p>نتعاون مع أفخم الفنادق والشاليهات لضمان تجربة مميزة.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center p-3" onclick="toggleDetails('restaurants')">
+                        <h3>المطاعم والمقاهي</h3>
+                        <p>استمتع بأشهى الأطباق في أرقى المطاعم.</p>
+                        <div id="restaurants" class="details collapse">
+                            <p>قوائم طعام متنوعة تناسب جميع الأذواق، مع عروض خاصة للعملاء.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center p-3" onclick="toggleDetails('contact')">
+                        <h3>سهولة التواصل</h3>
+                        <p>طرق تواصل مباشرة لحجز أسرع.</p>
+                        <div id="contact" class="details collapse">
+                            <p>يمكنك التواصل معنا مباشرة لحجز شاليه أو فندق خلال دقائق.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery container mt-5 text-center">
+            <h2>معرض الصور</h2>
+            <div class="row g-4">
+                <div class="col-md-4"><img src="/2/Gold Elegant Premium Perfume Instagram Post (1).png"
+                        class="img-fluid rounded" alt="Chalet"></div>
+                <div class="col-md-4"><img src="/2/Gold Elegant Premium Perfume Instagram Post (1).png"
+                        class="img-fluid rounded" alt="Furniture"></div>
+                <div class="col-md-4"><img src="/2/Gold Elegant Premium Perfume Instagram Post (1).png"
+                        class="img-fluid rounded" alt="Consulting"></div>
+            </div>
+        </section>
+        <section id="contact" class="contact container mt-5">
+            <h2>تواصل معنا</h2>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="الاسم" aria-label="الاسم" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" class="form-control" placeholder="البريد الإلكتروني" aria-label="البريد الإلكتروني" required>
+                </div>
+                <div class="col-12">
+                    <textarea class="form-control" placeholder="رسالتك" aria-label="رسالتك" required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">إرسال</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; <a href="https://www.linkedin.com/in/ahmedheweide/" target="_blank">Ahmed Heweide</a> تم
+            التصميم و البرمجة بواسطة </p>
+        <p>&copy; 2025 Delta Dream. جميع الحقوق محفوظة.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script>
+        function toggleDetails(id) {
+            let element = document.getElementById(id);
+            element.classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>

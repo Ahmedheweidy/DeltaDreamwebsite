@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Delta Dream - إدارة الأصول العقارية بأفضل الخدمات">
+    <title>Delta Dream - الرئيسية</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <video autoplay muted loop class="video-background" poster="fallback-image.jpg">
+        <source src="/photos/IMG_1315.MOV" type="video/mp4">
+        Your browser does not support video playback.
+    </video>
+    <header class="bg-dark text-white p-3">
+        <nav class="container navbar navbar-expand-lg navbar-dark">
+            <div class="logo fs-3">Delta Dream</div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="owners.html">الملاك</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="renters.html">المستأجرين</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="we.html">من نحن</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero position-relative">
+            <div class="position-absolute top-50 start-50 translate-middle text-center text-white">    
+                <h1>مرحبًا بكم في Delta Dream</h1>
+                <p>إدارة الأصول العقارية بأفضل الخدمات</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="owners.html" class="btn btn-danger">الملاك</a>
+                    <a href="renters.html" class="btn btn-warning">المستأجرين</a>
+                </div>
+            </div>
+        </section>
+        <section class="highlights container mt-5">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card text-center p-3" onclick="toggleDetails('chalets')">
+                        <h3>إدارة الشاليهات</h3>
+                        <p>خدمات إدارة متكاملة لضمان راحة المالك والمستأجر.</p>
+                        <div id="chalets" class="details collapse">
+                            <p>نقدم خدمات إدارة شاملة تشمل الصيانة، التسويق، وحجوزات العملاء.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center p-3" onclick="toggleDetails('hotels')">
+                        <h3>إدارة الفنادق</h3>
+                        <p>احصل على أفضل العروض لحجز الفنادق والشاليهات بسهولة.</p>
+                        <div id="hotels" class="details collapse">
+                            <p>لدينا مباني فندقية فخمة لضمان أفضل تجربة إقامة.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center p-3" onclick="toggleDetails('design')">
+                        <h3>فرش الشاليهات</h3>
+                        <p>تحسين وتنسيق الديكورات الداخلية بأفضل التصاميم العصرية.</p>
+                        <div id="design" class="details collapse">
+                            <p>تصميم داخلي عصري يعكس هوية فريدة باستخدام أحدث الاتجاهات.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center p-3" onclick="toggleDetails('consulting')">
+                        <h3>الاستشارات الاستثمارية</h3>
+                        <p>خدمات استشارية لمساعدتك في اتخاذ قرارات استثمارية ناجحة.</p>
+                        <div id="consulting" class="details collapse">
+                            <p>نوفر استشارات وخطط استثمارية لتحقيق أعلى العوائد.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials container mt-5 text-center">
+            <h2>آراء عملائنا</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p>"خدمة رائعة وتجربة مذهلة، أوصي بها بشدة!" - أحمد</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>"أفضل تجربة حجز مررت بها، شكراً Delta Dream!" - سارة</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section id="locations" class="locations container mt-5">
+            <h2>معرض المواقع</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="/2/Gold Elegant Premium Perfume Instagram Post (1).png" class="card-img-top" alt="Village 1">
+                        <div class="card-body">
+                            <h5 class="card-title">قرية 1</h5>
+                            <p class="card-text">وصف قصير عن القرية 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="/2/Gold Elegant Premium Perfume Instagram Post (1).png" class="card-img-top" alt="Village 2">
+                        <div class="card-body">
+                            <h5 class="card-title">قرية 2</h5>
+                            <p class="card-text">وصف قصير عن القرية 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="/2/Gold Elegant Premium Perfume Instagram Post (1).png" class="card-img-top" alt="Village 3">
+                        <div class="card-body">
+                            <h5 class="card-title">قرية 3</h5>
+                            <p class="card-text">وصف قصير عن القرية 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact container mt-5">
+            <h2>تواصل معنا</h2>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="الاسم" aria-label="الاسم" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" class="form-control" placeholder="البريد الإلكتروني" aria-label="البريد الإلكتروني" required>
+                </div>
+                <div class="col-12">
+                    <textarea class="form-control" placeholder="رسالتك" aria-label="رسالتك" required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">إرسال</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; <a href="https://www.linkedin.com/in/ahmedheweide/" target="_blank">Ahmed Heweide</a> تم التصميم و البرمجة بواسطة </p> 
+        <p>&copy; 2025 Delta Dream. جميع الحقوق محفوظة.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script>
+        function toggleDetails(id) {
+            let element = document.getElementById(id);
+            element.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
+
+
